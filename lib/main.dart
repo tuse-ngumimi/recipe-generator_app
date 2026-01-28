@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const CookdApp());
@@ -22,6 +23,45 @@ class CookdApp extends StatelessWidget {
           surface: const Color(0xFFFFF4E6),
         ),
         scaffoldBackgroundColor: const Color(0xFFFFFBF5),
+
+        textTheme: TextTheme(
+          // font for COOK'd title and main headers
+          displayLarge: GoogleFonts.mynerve(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+          displayMedium: GoogleFonts.mynerve(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+            color: const Color(0xFFFF8C42),
+          ),
+          displaySmall: GoogleFonts.mynerve(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: const Color(0xFFFF8C42),
+          ),
+          // font for the section headers
+          headlineMedium: GoogleFonts.mynerve(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: const Color(0xFFFF8C42),
+          ),
+          headlineSmall: GoogleFonts.mynerve(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+          // font for the body text
+          bodyLarge: GoogleFonts.poppins(
+            fontSize: 16,
+          ),
+          bodyMedium: GoogleFonts.poppins(
+            fontSize: 14,
+          ),
+          bodySmall: GoogleFonts.poppins(
+            fontSize: 12,
+          ),
+        ),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFFFF8C42),
           foregroundColor: Colors.white,
