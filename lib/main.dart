@@ -29,7 +29,7 @@ class CookdApp extends StatelessWidget {
           centerTitle: true,
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFFFF8C42),
+          backgroundColor: Color(0xFFEF7930),
           foregroundColor: Colors.white,
         ),
         cardTheme: CardTheme(
