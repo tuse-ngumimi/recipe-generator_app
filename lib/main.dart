@@ -62,11 +62,16 @@ class CookdApp extends StatelessWidget {
             fontSize: 12,
           ),
         ),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFFFF8C42),
+        appBarTheme: AppBarTheme(
+          backgroundColor: const Color(0xFFFF8C42),
           foregroundColor: Colors.white,
           elevation: 0,
           centerTitle: true,
+          titleTextStyle: GoogleFonts.mynerve(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Color(0xFFFF8C42),
