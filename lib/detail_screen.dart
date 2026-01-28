@@ -54,7 +54,7 @@ class MealDetailScreenState extends State<MealDetailScreen> {
           ? const Center(child: Text("Meal not found"))
           : CustomScrollView(
         slivers: [
-          // App Bar with Image
+          // app bar with image
           SliverAppBar(
             expandedHeight: 300,
             pinned: true,
@@ -106,14 +106,12 @@ class MealDetailScreenState extends State<MealDetailScreen> {
             ),
           ),
 
-          // Content
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Category and Area
                   Row(
                     children: [
                       if (_meal!.category != null) ...[
@@ -189,7 +187,7 @@ class MealDetailScreenState extends State<MealDetailScreen> {
 
                   const SizedBox(height: 24),
 
-                  // Ingredients Section
+                  // Section for ingredients
                   const Text(
                     "Ingredients",
                     style: TextStyle(
@@ -239,7 +237,7 @@ class MealDetailScreenState extends State<MealDetailScreen> {
 
                   const SizedBox(height: 24),
 
-                  // Instructions Section
+                  // Instructions for section
                   if (_meal!.instructions != null) ...[
                     const Text(
                       "Instructions",
