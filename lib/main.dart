@@ -16,23 +16,23 @@ class CookdApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFEF7930),
-          primary: const Color(0xFFEF7930),
-          secondary: const Color(0xFFFFF4E6),
+          seedColor: const Color(0xFFFF8C42), // Orange
+          primary: const Color(0xFFFF8C42),
+          secondary: const Color(0xFFFFF4E6), // Cream
           surface: const Color(0xFFFFF4E6),
         ),
         scaffoldBackgroundColor: const Color(0xFFFFFBF5),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFFEF7930),
+          backgroundColor: Color(0xFFFF8C42),
           foregroundColor: Colors.white,
           elevation: 0,
           centerTitle: true,
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFFEF7930),
+          backgroundColor: Color(0xFFFF8C42),
           foregroundColor: Colors.white,
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: Colors.white,
           elevation: 2,
           shape: RoundedRectangleBorder(
@@ -52,7 +52,7 @@ class CookdApp extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(color: Color(0xFFEF7930), width: 2),
+            borderSide: const BorderSide(color: Color(0xFFFF8C42), width: 2),
           ),
         ),
       ),
