@@ -17,9 +17,9 @@ class CookdApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFFF8C42), // Orange
+          seedColor: const Color(0xFFFF8C42),
           primary: const Color(0xFFFF8C42),
-          secondary: const Color(0xFFFFF4E6), // Cream
+          secondary: const Color(0xFFFFF4E6),
           surface: const Color(0xFFFFF4E6),
         ),
         scaffoldBackgroundColor: const Color(0xFFFFFBF5),
@@ -73,6 +73,7 @@ class CookdApp extends StatelessWidget {
             color: Colors.white,
           ),
         ),
+
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Color(0xFFFF8C42),
           foregroundColor: Colors.white,
@@ -84,6 +85,8 @@ class CookdApp extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
+
+
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.white,
@@ -91,10 +94,13 @@ class CookdApp extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Color(0xFFFF8C42)),
           ),
+
+
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Color(0xFFFFD4B8)),
           ),
+
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Color(0xFFFF8C42), width: 2),
